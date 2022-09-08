@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&family=Yellowtail&display=swap');
+
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --verdeOscuro: #1d741f;
+    --verdeMedio: #87BA54;
+    --verdeCaja: #57b36b;
+    --verdeClaro: #aceb90;
+    --crema: #e3f2b7;
+    --cemento: #D7D7D7;
+    --naranjaFuerte: #ef5715;
+    --naranjaMedio: #f57c00;
+    --naranjaSuave: #ffb74d;
+    --tiza: #f6f9f5;
+    --gray: #7e7373;
+    --black: #000000;
+  }
+
+body {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0.586338759136467) 6%, rgba(252,70,107,1) 100%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 5%, rgba(184,15,106,0.7600082269235819) 21%, rgba(252,176,69,1) 48%, rgba(184,15,106,0.7600082269235819) 96%);
+    color: var(--black);
+    border-radius: 32px;
+    box-shadow: 12px 12px 12px 1px rgba(0, 0, 0, 0.2);
+    flex: 1 1 300px;
+    padding: 20px 0px;
+    gap: 20px;
+    position: relative;
+}
+
+.card h1 {
+    text-align: center;
+}
+
+.datos-pizzas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: var(--black);
+    padding: 20px 0px;
+    gap: 20px;
+    text-align: center;
+}
+
+.datos-pizzas h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px 0px;
+  }
+
+.datos-pizzas h4 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0px;
+}
+
+#form {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#boton, #input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    #form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      padding: 5px 0px;
+      text-align: center;
+      gap: 10px;
+    }
+    .card img {
+        display: none;
+    }
